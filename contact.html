@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <title>Contact</title>
+  <style>
+
+      body {  
+        background-image: url(cliff.jpg);
+        background-repeat: no-repeat;
+        background-position: center; 
+        background-size: 100%;
+        background-attachment: fixed;
+        margin: 0;
+        padding: 0;
+      }
+
+      #contactContainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+        font-family: 'Rock Salt', cursive;
+      }
+
+      #callMeEmailMe {
+        font-size: 25px;
+        align-items: center;
+        justify-content: center;
+        color: black;
+      }
+
+      #contactMeForm {
+        border: 2px solid black;
+        background-color: rgba(8, 8, 8, 0.616);
+        width: 90%;
+        justify-content: center;
+        padding: 5%;
+        margin: 5%;
+      }
+
+      #contactMeForm h2 {
+        color: whitesmoke;
+      }
+
+      input[type=text], select, textarea {
+        width: 100%;
+        padding: 20px;
+        border: 3px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        /* Make padding and width stay in place */
+        margin-top: 6px;
+        margin-bottom: 16px;
+        margin-left: 10px;
+        resize: vertical;
+        font-size: 15px;
+      }
+
+      input[type=submit] {
+        background-color: #333;
+        color: whitesmoke;
+        border: 2px solid black;
+        width: 50%;
+        height: auto;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 15px;
+        font-size: 25px;
+      }
+      /*chage the color of the send button on hover*/
+      input[type=submit]:hover {
+        color: black;
+        background-color: #f8f8ff;
+      }
+
+  
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Rock+Salt" rel="stylesheet"> 
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+
+<header>
+
+</header>
+
+<body>
+  
+
+<br><br><br><br>
+  <div id="contactContainer">
+
+    <div id="callMeEmailMe">
+        <h1>steveaolsen@gmail.com // 615-922-9480</h1>
+    </div>
+
+    <div id="contactMeForm">
+      
+      <form method="post" action="send_form_email.php">
+        <table width="100%">
+          <tr>
+            <td valign="top"><label for="first_name">
+            <h2>First Name (*)</h2>
+            </label></td>
+            <td valign="top"><input type="text" name="first_name" maxlength="50" size="30"></td>
+          </tr>
+          <tr>
+            <td valign="top"><label for="last_name">
+            <h2>Last Name (*)</h2>
+            </label></td>
+            <td valign="top"><input type="text" name="last_name" maxlength="50" size="30"></td>
+          </tr>
+          <tr>
+            <td valign="top"><label for="email">
+            <h2>Email (*)</h2>
+            </label></td>
+            <td valign="top"><input type="text" name="email" maxlength="80" size="30"></td>
+          </tr>
+          <tr>
+            <td valign="top"><label for="telephone">
+            <h2>Phone</h2>
+            </label></td>
+            <td valign="top"><input type="text" name="telephone" maxlength="30" size="30"></td>
+          </tr>
+          <tr>
+            <td valign="top"><label for="comments">
+            <h2>Comments (*)</h2>
+            </label></td>
+            <td valign="top"><textarea name="comments" maxlength="1000" cols="25" rows="6"></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2" style="text-align:center"><input type="submit" value="Send"></td>
+          </tr>
+        </table>
+      </form>
+    </div>
+    <!--contactMeForm-->
+  </div>
+  <!--contactMeContainer-->
+
+
+</body>
+
+
+</html>
